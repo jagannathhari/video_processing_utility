@@ -11,10 +11,11 @@ Simple actions should only include 3 steps.
 MVP @ 2024-10-03_13.44.34
 
 1. select the file
-	Browse via path finding
+	Browse via path finding  
+or
 	Drag and drop from anywhere
 
-2. Select Function
+3. Select Function
 
 	Simple things that apply to the whole video with no conditions,
 	e.g.: with ffmpeg command:
@@ -25,7 +26,7 @@ MVP @ 2024-10-03_13.44.34
 
     Rotate 180° clockwise
    
-	 	ffmpeg -i input.mp4 -vf "transpose=2,transpose=2" output_Processed.mp4
+	 	ffmpeg -i input.mp4 -vf "transpose=2" output_Processed.mp4
    
 	Flip horizontally
 
@@ -39,7 +40,7 @@ MVP @ 2024-10-03_13.44.34
 
 		ffmpeg -i input.mp4 -vf "setdar=16/9" output_Processed.mp4
 
-3. Output
+4. Output
 
    Select where the output file will go:
    Same location as input source
